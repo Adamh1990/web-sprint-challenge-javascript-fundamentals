@@ -28,8 +28,10 @@ Be prepared to demonstrate your understanding of this week's concepts by answeri
 1. Briefly compare and contrast `.forEach` & `.map` (2-3 sentences max)
 
 2. Explain the difference between a callback and a higher order function.
+A higher order function takes another function as an argument, a callback is passed into a function to be referred to later
 
 3. What is closure?
+Grants access outside its own scope to other functions
 
 4. Describe the four rules of the 'this' keyword.
 
