@@ -28,7 +28,19 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
+function summation() {
+  let count = 0;
 
+  function counter() {
+    return count++;
+  }
+
+  counter.set = value => count = value;
+
+  counter.decrease = () => count--;
+
+  return counter;
+}
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
