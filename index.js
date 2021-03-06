@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+ // nestedFunction is a child of myFunction, therefore it can access anything within myFunction (but not vice-versa).//
 
 
 
@@ -101,7 +101,7 @@ return item.population < 5;
   var totalPop = zooAnimals.reduce(function(acc, animal) {
     return acc + animal.population;
   }, 0)
-  return totalPop;
+  return totalPop;z
  }
   // console.log(totalPop);
   
@@ -207,14 +207,18 @@ CuboidMaker.prototype.surfaceArea = function(length, width, height) {
 
 // 🦄🦄🦄 Topic 4: Classes 🦄🦄🦄 //
 //🦄🦄🦄 1. Take your prototypes from above and refactor into class syntax. Please rename your class CuboidMakerTwo and your object cuboidTwo 🦄🦄🦄
-class CuboidMakerTwo{
-  cuboidTwo(object) {
+class CuboidMakerTwo {
+  constructor(object) {
     this.length = object.length;
     this.width = object.width;
     this.height = object.height;
   }
-  volume(length, width, height) {
-    return this.length * this.width * this.height;
+  volume() {
+    return (this.length * this.width * this.height);
+  }
+
+  surfaceArea() {
+    return 2 * ((this.length * this.width) + (this.width * this.height) + (this.height * this.length))
   }
 }
 
